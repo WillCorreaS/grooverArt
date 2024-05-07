@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroovArt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GroovArt Player</h1>
+        <input type="text" id="botaoBusca" placeholder="Buscar música...">
+        <button onclick="search()">Buscar</button>
+    </header>
+
+    <section id="popularMusica">
+        <h2>Músicas mais tocadas</h2>
+        <ul id="popularMusicaList"></ul>
+    </section>
+
+    <section id="musicaGeneros">
+        <h2>Estilos Musicais</h2>
+        <ul id="musicaGenerosList"></ul>
+    </section>
+
+    <footer id="audioPlayer">
+        <audio controls id="audioPlayerControl" style="opacity: 0.8;"></audio>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://genius.codes"></script>
+
+</body>
+</html>
