@@ -116,23 +116,32 @@ body {
     
 }
 
-
-
-
-section {
-    padding: 20px;
-    margin: 20px 0;
+/* ######################################## */
+section{
+    background-color: yellow;
+    width: 50%;
 }
 
-
-
-#popularMusica {
+/* #artista {
     background-color: cadetblue;
+    margin-top: -60px ;
 }
 
-#musicaGeneros {
-    background-color: rgb(131, 95, 160);
+#artista figure{
+    transform: scale(130%);
+    box-shadow: var(--cor-escura) 2px 2px 5px;
+    margin-top: -55px;
 }
+
+.setas{
+    display: flex;
+    justify-content: space-between;
+    filter: opacity(0.7); 
+}
+
+#topMusica {
+    background-color: rgb(131, 95, 160);
+} */
 
 
 
