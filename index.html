@@ -7,12 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header >
+        <!-- Cabeçalho com área de busca -->
+        <nav>
+            <div  class="cabecalho limitador">
+        <a href="index.html"> <img src="/imagens/logo-marca-OK.png" alt="logo-marca" class="logo"></a>
+        <a href="#"> <img src="/imagens/icones/icone-user-OK.png" alt="imagem do usuário" class="user"></a>
+            </div>
         <h1>GroovArt Player</h1>
         <input type="text" id="botaoBusca" placeholder="Buscar música...">
         <button onclick="search()">Buscar</button>
-    </header>
+        
 
+        <!-- busca por letra -->
+        <div class="links-alfabeto">
+            <a href="#">0-9</a>
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+            <a href="#">E</a>
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">H</a>
+            <a href="#">I</a>
+            <a href="#">J</a>
+            <a href="#">K</a>
+            <a href="#">L</a>
+            <a href="#">M</a>
+            <a href="#">N</a>
+            <a href="#">O</a>
+            <a href="#">P</a>
+            <a href="#">Q</a>
+            <a href="#">R</a>
+            <a href="#">S</a>
+            <a href="#">T</a>
+            <a href="#">U</a>
+            <a href="#">V</a>
+            <a href="#">W</a>
+            <a href="#">X</a>
+            <a href="#">Y</a>
+            <a href="#">Z</a>
+        </div>
+    </nav>
+    </header>
+<main  class="limitador">
     <section id="popularMusica">
         <h2>Músicas mais tocadas</h2>
         <ul id="popularMusicaList"></ul>
@@ -22,6 +61,8 @@
         <h2>Estilos Musicais</h2>
         <ul id="musicaGenerosList"></ul>
     </section>
+
+</main>
 
     <footer id="audioPlayer">
         <audio controls id="audioPlayerControl" style="opacity: 0.8;"></audio>
