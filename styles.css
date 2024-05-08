@@ -145,7 +145,6 @@ footer {
     background-color: var(--cor-escura);
     padding: 10px;
     text-align: center;
-    opacity: 0.8;
     font-size: 0.8rem;
     letter-spacing: 1.2px;
 }
