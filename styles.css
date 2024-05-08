@@ -13,9 +13,9 @@ body {
     padding: 0;
 }
 
-h2 {font-family:  "Passion One", sans-serif;}
+h2 {font-family:  "Passion One", sans-serif; font-weight: normal; letter-spacing: 1px;}
 
-p {font-family: "Poppins", sans-serif;}
+p {font-family: "Poppins", sans-serif; }
 
 body, h1, h2, p, figure, nav ul{
     margin: 0;
@@ -51,10 +51,14 @@ header {
     transform: translateY(110px);
 }
 
-nav img {transform: scale(40%);}
+nav img {
+    margin: 5px;
+    transform: scale(40%);
+
+}
 
 .cabecalho img { 
-    max-width: 50%;
+    max-width: 45%;
     border-radius: 50%;
     position: relative;
 
@@ -76,6 +80,12 @@ header button {
     cursor: pointer;
     border-radius: 8px;
 }
+
+.busca {
+    /* background-color: yellow; */
+    position:relative;
+    z-index: 10;
+    }
 
 
 
