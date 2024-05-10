@@ -116,13 +116,37 @@ body {
     
 }
 
-
-
-
 section {
     padding: 20px;
     margin: 20px 0;
 }
+
+
+
+
+.galeria-container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: auto;
+}
+
+
+.aleria-wrapper{
+    overflow-x: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+
+
+
+
+
 
 
 
@@ -172,7 +196,7 @@ footer img{border-radius: 50%;}
 
 /* CRIANDO MIDIA QUERY (RESSPONSIVIDADE) */
 /* Estilos para dispositivos com largura de tela entre 420px e 600px */
-@media screen and (min-width: 428px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
       font-size: 16px;
     }
