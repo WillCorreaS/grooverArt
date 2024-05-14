@@ -74,11 +74,9 @@ body {
 }
 
 /* Estilos para as seções */
-.containerEstilos {
-    background-color: rgba(255, 255, 255, 0.76); /* Adiciona um fundo branco com transparência */
-    display: flex;
-    justify-content: space-around;
-    max-width: 120px;
+.section {    border-radius: 8px;
+    padding: 50px 5%;
+    background-color: rgba(255, 255, 255, 0.199); /* Adiciona um fundo branco com transparência */
 }
 /* 
 .galeria img{
@@ -86,7 +84,11 @@ body {
     padding: 15px;
 
 } */
-
+.col-md-4 img {
+    border-radius: 8px;
+    padding: 0;
+    transform: scale(65%);
+}
 
 
 
@@ -145,31 +147,43 @@ footer li{list-style-type: none}
 /* ##################################### */
 
 /* Responsividade */
-@media only screen and (max-width: 900px) {
-    header {
-        padding: 10px 5%; /* Mantém a margem de 5% em cada lado */
-    }
-}
+
 
 @media only screen and (max-width: 420px) {
     .header-container {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center; */
     }
 
     .search-bar input {
-        width: 100%; /* Ocupa toda a largura */
+        width: 60%; /* Ocupa toda a largura */
         margin-right: 0;
         margin-bottom: 10px; /* Adiciona espaço entre a barra de pesquisa e o botão */
     }
 
     .search-bar button {
-        width: 100%; /* Ocupa toda a largura */
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .section {background-color: yellow;
+        margin: auto;
+        padding: 0;
+        /* max-width: 100%; */
+    }
+
+    .galeria a {
+        width: 250vh;
+        display: flex;
+        overflow:;
+
+        
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .section {
-        padding: 30px 5%;
+    header {
+        /* padding: 10px 5%; Mantém a margem de 5% em cada lado */
     }
 }
