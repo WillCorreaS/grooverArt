@@ -127,8 +127,9 @@ section {
 .galeria-container {
     position: relative;
     padding: 15px;
-    max-width: 640px;
+    width: 240px;
     margin: auto;
+
 }
 
 

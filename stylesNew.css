@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none; color: whitesmoke;}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22%; /* Alterado para 5% de margem em cada lado */
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 50px; /* Ajuste conforme necessário */
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login img {
+    height: 45px; /* Ajuste conforme necessário */
+}
+
+.alphabet {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.alphabet ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alphabet li {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para a imagem de fundo */
+body {
+    background-image: url("/imagens/imagen-de-fundo-OK.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Define a altura como 100% da viewport */
+    overflow: auto; /* Adiciona rolagem se necessário */
+}
+
+/* Estilos para as seções */
+.containerEstilos {
+    background-color: rgba(255, 255, 255, 0.76); /* Adiciona um fundo branco com transparência */
+    display: flex;
+    justify-content: space-around;
+    max-width: 120px;
+}
+/* 
+.galeria img{
+    width: 50px;
+    padding: 15px;
+
+} */
+
+
+
+
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer li{list-style-type: none}
+
+.social-icons li img:hover{background-color: rgb(0, 141, 71); border-radius: 59%; transition: 0.2s;}
+
+.footerConteudo {
+    /* background-color: rgb(86, 0, 104); */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    align-items: self-end;
+}
+
+.menuRapido li{
+    padding: 35px;
+    display: flex;
+    display: inline;
+    justify-content: space-around;
+}
+
+.social-icons li{
+    padding: 35px;
+    display: flex;
+    display: inline;
+    justify-content: space-around;
+}
+
+.desenvolvedores {font-size: 0.7rem; letter-spacing: 3px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################################### */
+
+/* Responsividade */
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 10px 5%; /* Mantém a margem de 5% em cada lado */
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 100%; /* Ocupa toda a largura */
+        margin-right: 0;
+        margin-bottom: 10px; /* Adiciona espaço entre a barra de pesquisa e o botão */
+    }
+
+    .search-bar button {
+        width: 100%; /* Ocupa toda a largura */
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .section {
+        padding: 30px 5%;
+    }
+}
