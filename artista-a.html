@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="stylesNew.css">
 
+    <link rel="stylesheet" href="styles-artista.css">
+
 </head>
 
 <body>
@@ -21,9 +23,7 @@
                 <a href="index.html"><img src="imagens/logo-marca-128px.png" alt="Logo"></a>
             </div>
             <div class="search-bar">
-                <a href="index.html">
-                    <h2>GroovArt Player</h2>
-                </a>
+                <a href="index.html"><h2>GroovArt Player</h2></a>
                 <input type="text" placeholder="Pesquisar...">
                 <button type="button" class="btn btn-outline-success">Buscar</button>
             </div>
@@ -33,9 +33,7 @@
         </div>
         <div class="alphabet">
             <ul>
-                <a href="artista-a.html">
-                    <li>A</li>
-                </a>
+                <a href="artista-a.html"><li>A</li></a>
                 <li>C</li>
                 <li>E</li>
                 <a href="pagina-jorgeematheus.html">J</a>
@@ -44,13 +42,16 @@
         </div>
     </header>
 
+
+        <!-- ################################################## -->
+
     <!-- Aqui é a primeira seção da PÁGINA -->
     <section class="caixa container">
-        <h2 id="topo">Todos os Artistas</h2>
+        <h2>Todos os Artistas</h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="artista-a.html"><img src="imagens/adeleAlta.jpg" class="d-block w-100" alt="..."></a>
+                    <img src="imagens/adeleAlta.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="imagens/creedAlta.jpeg" class="d-block w-100" alt="...">
@@ -77,42 +78,39 @@
 
     <!-- Aqui é a segunda seção da PÁGINA -->
 
-    <section class="section all-music">
-        <h2>Etilos Músicais</h2>
-        <div class="container">
-            <div class="galeria">
-                <!-- Conteúdo da galeria de estilos musicais aqui -->
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/axe.jpg" alt="Imagem 1" class="img-fluid"></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/black-music.jpg" alt="Imagem 2" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/blues.jpg" alt="Imagem 3" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/bossa-nova.jpg" alt="Imagem 4" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/rock.jpg" alt="Imagem 5" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/axe.jpg" alt="Imagem 6" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/bossa-nova.jpg" alt="Imagem 7" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/rock.jpg" alt="Imagem 8" class="img-fluid">
-                </div></a>
-                <div class="col-md-4">
-                    <a href="#"><img src="imagens/estilos/axe.jpg" alt="Imagem 9" class="img-fluid">
-                        <!-- Adicione mais imagens conforme necessário -->
-                </div></a>
+    <section class="section all-music container">
+        <h2>Top Músicas</h2>
+        <div class="music-section">
+            <div class="music-item">
+                <h3>Hello      ................</h3>
+                <button onclick="playPause('audio1')">Play/Pause</button>
+                <audio id="audio1" src="musicas/adele/Adele - Hello.mp3" controls></audio>
             </div>
+            <div class="music-item">
+                <h3>Send My Love</h3>
+                <button onclick="playPause('audio2')">Play/Pause</button>
+                <audio id="audio2" src="musicas/adele/Adele - Send My Love.mp3" controls></audio>
+            </div>
+            <div class="music-item">
+                <h3>Set Fire to the Rain</h3>
+                <button onclick="playPause('audio3')">Play/Pause</button>
+                <audio id="audio3" src="musicas/adele/Adele - Set Fire to the Rain.mp3" controls></audio>
+            </div>
+            <div class="music-item">
+                <h3>Rolling in the deep</h3>
+                <button onclick="playPause('audio4')">Play/Pause</button>
+                <audio id="audio4" src="musicas/adele/rolling-in-the-deep-official-music-video.mp3" controls></audio>
+            </div>
+            <div class="music-item">
+                <h3>Someone like you</h3>
+                <button onclick="playPause('audio5')">Play/Pause</button>
+                <audio id="audio5" src="musicas/adele/someone-like-you-official-music-video.mp3" controls></audio>
+            </div>
+        </div>
     </section>
-    </div>
+
+
+    <!-- ################################################## -->
 
     <footer>
         <div class="footerConteudo">
@@ -148,6 +146,8 @@
         crossorigin="anonymous"></script>
 
     <script src="scriptNew.js"></script>
+
+    <script src="artista.js"></script>
 
 
 </body>

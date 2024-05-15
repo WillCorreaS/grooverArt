@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+Fundo Cabeçalho e Rodapé: #171717
+Cor da Fonte : #E9E9E9
+Cor de Destaque (DETALHES): #88E229
+*/
+
+
+/* CONFIGURAÇÃO GERAL */
+*{box-sizing: border-box;}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: "Passion One", "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {font-family:  "Passion One", sans-serif; font-weight: normal; letter-spacing: 1.5px;}
+
+p {font-family: "Poppins", sans-serif; }
+
+img{max-width: 100%;}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Isso centraliza o conteúdo */
+}
+
+
+/* CONFIGURAÇÃO DO CONTEÚDO */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,7 +102,7 @@ header {
 
 /* Estilo para a imagem de fundo */
 body {
-    background-image: url("/imagens/imagen-de-fundo-OK.png");
+    background-image: url("imagens/imagen-de-fundo-OK.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -74,20 +111,31 @@ body {
 }
 
 /* Estilos para as seções */
-.section {    border-radius: 8px;
+.section {border-radius: 8px;
     padding: 50px 5%;
-    background-color: rgba(255, 255, 255, 0.199); /* Adiciona um fundo branco com transparência */
+    background-color: rgba(255, 255, 255, 0.096);
 }
-/* 
-.galeria img{
-    width: 50px;
-    padding: 15px;
 
-} */
+h2 {color: aliceblue;}
+
+.galeria {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .col-md-4 img {
+    filter: brightness(0.7);
     border-radius: 8px;
     padding: 0;
-    transform: scale(65%);
+    transform: scale(85%);
+    box-shadow: black 0 1px 3px;
+}
+.col-md-4:hover { 
+    transform: scale(107%);
+    transition: 0.8s;
+    filter: brightness(1.3);
+
 }
 
 
@@ -122,6 +170,12 @@ footer li{list-style-type: none}
     justify-content: space-around;
 }
 
+.menuRapido li a:hover{
+    color: rgb(0, 141, 71);
+    text-shadow: #003618 0 1px 3px;
+    transition: 0.2s; 
+}
+
 .social-icons li{
     padding: 35px;
     display: flex;
@@ -150,40 +204,35 @@ footer li{list-style-type: none}
 
 
 @media only screen and (max-width: 420px) {
-    .header-container {
-        /* flex-direction: column;
-        align-items: center; */
+    .header-container {padding: 8px;}
+
+    .login img {
+        height: 8vh;
     }
 
-    .search-bar input {
-        width: 60%; /* Ocupa toda a largura */
-        margin-right: 0;
-        margin-bottom: 10px; /* Adiciona espaço entre a barra de pesquisa e o botão */
-    }
-
-    .search-bar button {
-        width: 15%;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .section {background-color: yellow;
+    .section {
         margin: auto;
         padding: 0;
-        /* max-width: 100%; */
+        max-width: 100%;
     }
 
-    .galeria a {
-        width: 250vh;
+    .galeria {
         display: flex;
-        overflow:;
+        justify-content: center; 
+    }
 
-        
+    .footerConteudo{
+        background-color: aquamarine;
+        text-align:center;
+    }
+    .menuRapido li{
+        padding: 0px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 700px) {
     header {
-        /* padding: 10px 5%; Mantém a margem de 5% em cada lado */
+        padding:0;
     }
 }
