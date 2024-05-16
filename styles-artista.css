@@ -9,7 +9,7 @@
 .music-item {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 .music-item h3 {
@@ -27,8 +27,7 @@ button {
     transition: background-color 0.3s;
 
 }
-button:hover {
-
+nav button:hover {
     background-color: #288f69;
 }
 audio {

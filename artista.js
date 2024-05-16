@@ -1,8 +1,4 @@
-        function playPause(audioId) {
-            const audio = document.getElementById(audioId);
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
+const prev = document.querySelector("carousel-control-prev");
+const next = document.querySelector("carousel-control-next");
+const urlAtual = document.querySelector("")
+
